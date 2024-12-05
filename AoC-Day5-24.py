@@ -1,6 +1,5 @@
 with open('inputs/input05.txt') as i: input = i.read().splitlines()
 split = input.index('')
-#ordering_rules = [r.split("|") for r in input[:split]]
 page_updates = [u.split(",") for u in input[split+1:]]
 ordering_rules_dict = {}
 for r in input[:split]:
